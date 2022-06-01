@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ github.event.repository.name }}:${{ github.run_id }}
+      run: docker build . --file Dockerfile --tag hangus94/${{ github.event.repository.name }}:${{ github.run_id }}
